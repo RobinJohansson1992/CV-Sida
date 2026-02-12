@@ -91,7 +91,9 @@ a:hover {
 }
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .main-box {
   display: flex;
@@ -99,8 +101,8 @@ main {
   align-items: start;
   padding-top: 2rem;
   margin-top: 4rem;
-  padding-left: 2rem;
-  height: 23rem;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
   width: 55vw;
   background-color: rgba(75, 121, 219, 0.221);
   background-image: url("/Images/jag.jpeg");
@@ -113,20 +115,79 @@ main {
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
   box-shadow: 8px 5px 8px rgba(155, 171, 176, 0.371);
-  border: 2px solid rgb(51, 69, 99);
+  border: 2px solid rgb(195, 217, 255);
 }
 .main-box:hover {
-  margin-top: 3.9rem;
-  height: 23.2rem;
-  width: 55.2vw;
+  transition: transform 2.5s;
+  margin-top: 3.7rem;
+  height: 23.4rem;
+  width: 55.4vw;
   font-size: 1.2rem;
+  -webkit-transition: transform 2.5s;
+  -moz-transition: transform 2.5s;
+  -ms-transition: transform 2.5s;
+  -o-transition: transform 2.5s;
+}
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 2rem;
+  height: 17rem;
+  width: 55vw;
+  background-color: rgba(75, 121, 219, 0.221);
+  border-radius: 30px;
+  box-shadow: 8px 5px 8px rgba(155, 171, 176, 0.371);
+  border: 2px solid rgb(195, 217, 255);
+}
+.side-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 2rem;
+  width: 24vw;
+  background-color: rgba(75, 121, 219, 0.221);
+  border-radius: 30px;
+  box-shadow: 8px 5px 8px rgba(155, 171, 176, 0.371);
+  border: 2px solid rgb(195, 217, 255);
+}
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 59vw;
 }
 h1 {
   font-size: 3rem;
-  color: white;
-  margin-bottom: 2rem;
+  color: rgba(254, 184, 78, 0.607);
+}
+h2 {
+  font-size: 2.3rem;
+  color: rgba(254, 184, 78, 0.607);
+}
+h3 {
+  color: rgba(254, 184, 78, 0.607);
+}
+h4 {
+  color: rgb(223, 222, 222);
 }
 p {
-  color: white;
+  color: rgb(223, 222, 222);
   font-size: 1.2rem;
+}
+li {
+  color: white;
+}
+.divider {
+  color: white;
+  background-color: rgb(223, 222, 222);
+  height: 0.1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
