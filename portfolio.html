@@ -18,24 +18,97 @@
         <li><a href="/portfolio.html">Portfolio</a></li>
         <li><a href="/contact.html">Kontakt</a></li>
       </ul>
-      <img class="selfie" src="images/selfie.png" alt="A picture of me" />
+      <section class="headerpic">
+        <img class="selfie" src="images/selfie.png" alt="A picture of me" />
+      </section>
     </header>
     <main>
-      <h1>Projekt jag arbetat med</h1>
       <section class="projects">
-        <article class="art1">
-          <p>Projekt 1</p>
-        </article>
-        <article class="art2">
-          <p>Projekt 2</p>
-        </article>
-        <article class="art3">
-          <p>Projekt 3</p>
-        </article>
-        <article class="art4">
+        <div id="popup" class="overlay">
+            <h2>Individuellt databasprojekt</h2>
+            <br />
+            <p>
+              I det här projektet fick vi göra en console-applikation där vi
+              använde oss av en databas vi fick skapa med SQL i SSMS. Databasen
+              bestod av information om en skola och uppgiften gick ut på att
+              göra ett program som personalen på skolan skulle kunna använda sig
+              av för att utföra specifika uppgifter, så som att se viktig info
+              om önskad elev, sätta betyg på elev, se vad för personal som
+              jobbar på vilken avdelning, lägga till ny personal osv.
+              <br /><br />
+              GitHub-repo:
+              <a
+                href="https://github.com/RobinJohansson1992/Labb4RJ"
+                target="_blank"
+                class="repo-linq"
+                >Tryck här</a
+              >
+            </p>
+            <a href="#" class="close">Stäng</a>
+          </div>
+          <div id="popup2" class="overlay">
+            <h2>Projekt i grupp</h2>
+            <br />
+            <p>
+              I det här projektet fick vi arbeta i grupp och tillsammans bygga
+              en bank-applikation med de kunnskaper vi hade fått i kurserna
+              Objektorienterad Programmering och Agil Systemutveckling i team.
+              Vi arbetade agilt och fick i gruppen komma överens om vilket agilt
+              ramverk vi skulle använda oss av. Det var en mycket kul projekt
+              där vi lärde oss massor av varandra!
+              <br /><br />
+              GitHub-repo:
+              <a
+                href="https://github.com/Pontusthoren-del/OpenDefendersATM"
+                target="_blank"
+                class="repo-linq"
+                >Tryck här</a
+              >
+            </p>
+            <a href="#" class="close">Stäng</a>
+          </div>
+        <section class="project-box">
+          <article class="project-box-left">
+            <h2>Individuellt databasprojekt</h2>
+            <h4>Console-applikation med VS och SSMS</h4>
+            <p>- Skolprojekt</p>
+          </article>
+          <article class="project-box-right">
+            <a class="info-button" href="#popup">Mer info</a>
+          </article>
+          
+        </section>
+
+        <section class="project-box">
+          
+          <article class="project-box-left">
+            <h2>Projekt i grupp</h2>
+            <h4>Objektorienterad programmering</h4>
+            <p>- Skolprojekt i grupp</p>
+          </article>
+          <article class="project-box-right">
+            <a class="info-button" href="#popup2">Mer info</a>
+          </article>
+          
+        </section>
+
+        <section class="project-box">
+          <article class="project-box-left">
+            <h2>Vardagsapp</h2>
+            <h4>ASP.NET Core Web App</h4>
+            <p>- Eget app-projekt</p>
+          </article>
+          <article class="project-box-right">
+            <a class="info-button" href="">Mer info</a>
+          </article>
+        </section>
+        <article class="project-box">
           <p>Projekt 4</p>
         </article>
       </section>
     </main>
+    <footer>
+      <h3>&copy Robin Johansson 2026</h3>
+    </footer>
   </body>
 </html>
