@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   border: 0px;
+  
 }
 body {
   background: black;
@@ -11,7 +12,7 @@ body {
     rgb(0, 0, 0) 45%,
     rgb(60, 62, 83) 150%
   );
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Public Sans", Serif;
 }
 header {
   width: 100%;
@@ -22,7 +23,7 @@ header {
     rgb(58, 58, 66) 45%,
     rgb(17, 21, 60) 150%
   );
-  font-family: "Playwrite VN", serif;
+  font-family: "Public Sans", serif;
   color: white;
   display: flex;
   align-items: center;
@@ -36,19 +37,17 @@ header {
 .header-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 45%;
 }
 .headertext {
   width: 25%;
   display: flex;
   justify-content: center;
-  text-shadow: 1px 2px 5px rgb(11, 11, 11);
+  text-shadow: 1px 2px 5px rgb(0, 0, 0);
   color: rgba(254, 184, 78, 0.607);
   font-size: 1.5rem;
-  font-family:
-    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
+  font-family: "Public Sans"}
 .headerpic {
   display: flex;
   flex-direction: row;
@@ -73,13 +72,21 @@ header li {
 a {
   text-decoration: none;
   color: rgb(223, 222, 222);
-  color: rgb(219, 246, 219);
 }
 a:hover {
   font-size: 1.4rem;
   color: white;
   text-shadow: 1px 1px 5px rgb(255, 255, 255);
 }
+a:active{
+  text-shadow: none;
+  color:rgba(255, 255, 255, 0.764);
+}
+.active-page{
+  font-size: 1.8rem;
+  color:rgba(254, 182, 48, 0.897);
+}
+
 .selfie {
   height: 7rem;
   width: 7rem;
@@ -188,21 +195,21 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 30px;
-  box-shadow: 8px 5px 8px rgba(155, 171, 176, 0.371);
+  box-shadow: 5px 5px 8px rgba(155, 171, 176, 0.371);
   border: 2px solid rgb(195, 217, 255);
   transition: transform 1.5s;
 }
-.project-box-left{
+.project-box-middle{
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 55%;
 }
 .project-box-right{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  width: 25%;
   height: 6rem;
 }
 .info-button{
@@ -212,12 +219,49 @@ main {
   margin-right: 2rem;
   background: linear-gradient(
     90deg,
-    rgb(35, 99, 22) 0%,
-    rgba(39, 178, 97, 0.799) 45%,
-    rgb(12, 42, 12) 150%
+    rgb(22, 99, 59, 0.5) 0%,
+    rgba(39, 178, 113, 0.5) 45%,
+    rgb(12, 42, 12, 0.5) 150%
   );
   font-size: 1.5rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.371);
+}
+.project-box-left{
+width: 20%;
+display: flex;
+}
+.projectpic{
+  width: 8rem;
+  height: 5rem;
+  margin-top:0.5rem;
+  border-radius: 10px;
+  display: flex;
+  justify-self: center;
+  border: 1px solid white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.371);
+}
+.info-button:hover{
+  padding: 1.1rem;
+  background: linear-gradient(
+    90deg,
+    rgb(20, 67, 46) 0%,
+    rgba(84, 152, 117, 0.799) 45%,
+    rgb(12, 42, 12) 150%
+  );
+}
+.info-button:active{
+  padding: 1rem;
+  border: 0.1rem solid white;
+  border-radius: 20px;
+  margin-right: 2rem;
+  background: linear-gradient(
+    90deg,
+    rgb(13, 56, 34) 0%,
+    rgba(39, 178, 113, 0.799) 45%,
+    rgb(12, 42, 12) 150%
+  );
+  font-size: 1.5rem;
+  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.371);
 }
 .overlay {
   position: fixed;
@@ -259,6 +303,30 @@ main {
   padding: 2rem;
   border-radius: 12px;
 }
+#popup3:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+}
+#popup4:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+}
 .repo-linq{
   color: rgb(136, 249, 136);
 }
@@ -267,11 +335,12 @@ h1 {
   color: rgba(251, 174, 79, 0.841);
 }
 h2 {
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   color: rgba(251, 174, 79, 0.841);
 }
 h3 {
-  color: rgba(251, 174, 79, 0.841);
+  color: rgba(255, 255, 255, 0.71);
+  font-size: 1.5rem;
 }
 h4 {
   color: rgb(215, 227, 167);
@@ -298,6 +367,7 @@ footer{
   .columns {
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
   }
   .side-column{
     width: 100%;

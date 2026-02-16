@@ -4,18 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <section class="headertext">
-        <h2>Portfolio</h2>
+        <h3>Robin Johansson</h3>
       </section>
       <ul class="header-menu">
         <li><a href="/index.html">Start</a></li>
         <li><a href="/presentation.html">Presentation</a></li>
         <li><a href="/cv.html">CV</a></li>
-        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="/portfolio.html" class="active-page">Portfolio</a></li>
         <li><a href="/contact.html">Kontakt</a></li>
       </ul>
       <section class="headerpic">
@@ -25,86 +28,157 @@
     <main>
       <section class="projects">
         <div id="popup" class="overlay">
-            <h2>Individuellt databasprojekt</h2>
-            <br />
-            <p>
-              I det här projektet fick vi göra en console-applikation där vi
-              använde oss av en databas vi fick skapa med SQL i SSMS. Databasen
-              bestod av information om en skola och uppgiften gick ut på att
-              göra ett program som personalen på skolan skulle kunna använda sig
-              av för att utföra specifika uppgifter, så som att se viktig info
-              om önskad elev, sätta betyg på elev, se vad för personal som
-              jobbar på vilken avdelning, lägga till ny personal osv.
-              <br /><br />
-              GitHub-repo:
-              <a
-                href="https://github.com/RobinJohansson1992/Labb4RJ"
-                target="_blank"
-                class="repo-linq"
-                >Tryck här</a
-              >
-            </p>
-            <a href="#" class="close">Stäng</a>
-          </div>
-          <div id="popup2" class="overlay">
-            <h2>Projekt i grupp</h2>
-            <br />
-            <p>
-              I det här projektet fick vi arbeta i grupp och tillsammans bygga
-              en bank-applikation med de kunnskaper vi hade fått i kurserna
-              Objektorienterad Programmering och Agil Systemutveckling i team.
-              Vi arbetade agilt och fick i gruppen komma överens om vilket agilt
-              ramverk vi skulle använda oss av. Det var en mycket kul projekt
-              där vi lärde oss massor av varandra!
-              <br /><br />
-              GitHub-repo:
-              <a
-                href="https://github.com/Pontusthoren-del/OpenDefendersATM"
-                target="_blank"
-                class="repo-linq"
-                >Tryck här</a
-              >
-            </p>
-            <a href="#" class="close">Stäng</a>
-          </div>
+          <h2>Individuellt databasprojekt</h2>
+          <br />
+          <p>
+            I det här projektet fick vi göra en console-applikation där vi
+            använde oss av en databas vi fick skapa med SQL i SSMS. Databasen
+            bestod av information om en skola och uppgiften gick ut på att göra
+            ett program som personalen på skolan skulle kunna använda sig av för
+            att utföra specifika uppgifter, så som att se viktig info om önskad
+            elev, sätta betyg på elev, se vad för personal som jobbar på vilken
+            avdelning, lägga till ny personal osv.
+            <br /><br />
+            GitHub-repo:
+            <a
+              href="https://github.com/RobinJohansson1992/Labb4RJ"
+              target="_blank"
+              class="repo-linq"
+              >Tryck här</a
+            >
+          </p>
+          <a href="#" class="close">Stäng</a>
+        </div>
+        <div id="popup2" class="overlay">
+          <h2>Projekt i grupp</h2>
+          <br />
+          <p>
+            I det här projektet fick vi arbeta i grupp och tillsammans bygga en
+            bank-applikation med de kunnskaper vi hade fått i kurserna
+            Objektorienterad Programmering och Agil Systemutveckling i team. Vi
+            arbetade agilt och fick i gruppen komma överens om vilket agilt
+            ramverk vi skulle använda oss av. Det var en mycket kul projekt där
+            vi lärde oss massor av varandra!
+            <br /><br />
+            GitHub-repo:
+            <a
+              href="https://github.com/Pontusthoren-del/OpenDefendersATM"
+              target="_blank"
+              class="repo-linq"
+              >Tryck här</a
+            >
+          </p>
+          <a href="#" class="close">Stäng</a>
+        </div>
+        <div id="popup3" class="overlay">
+          <h2>Vardags-app</h2>
+          <br />
+          <p>
+            Jag fick en idé om att göra en app vid sidan av skolan för mig själv, dels för att 
+            prova lite själv vad man kan göra och dels för att kanske kunna använda den i vardagen.
+            Iden var är att ha en app där jag har alla kom-ihåg-saker samlat på samma ställe, så som 
+            handla-lista, notiser till sig själv, event och jobbpass. 
+            <br /><br />
+            GitHub-repo:
+            <a
+              href="https://github.com/RobinJohansson1992/websiteTest"
+              target="_blank"
+              class="repo-linq"
+              >Tryck här</a
+            >
+          </p>
+          <a href="#" class="close">Stäng</a>
+        </div>
+
+        <div id="popup4" class="overlay">
+          <h2>CV-Sida</h2>
+          <br />
+          <p>
+            Vi fick i uppgift att göra en hemsida vi sedan ska kunna använda som CV vid LIA- och jobbansökningar.
+            Första versionen av hemsidan som vi jobbar med nu ska göras enbart med HTML och CSS. Riktigt kul projekt 
+            tycker jag som älskar att skapa och bygga saker.
+            <br /><br />
+            GitHub-repo:
+            <a
+              href="https://github.com/RobinJohansson1992/CV-Sida"
+              target="_blank"
+              class="repo-linq"
+              >Tryck här</a
+            >
+          </p>
+          <a href="#" class="close">Stäng</a>
+        </div>
         <section class="project-box">
-          <article class="project-box-left">
+          <div class="project-box-left">
+            <img
+              class="projectpic"
+              src="images/database.png"
+              alt="Database picture"
+            />
+          </div>
+          <div class="project-box-middle">
             <h2>Individuellt databasprojekt</h2>
             <h4>Console-applikation med VS och SSMS</h4>
             <p>- Skolprojekt</p>
-          </article>
-          <article class="project-box-right">
+          </div>
+          <div class="project-box-right">
             <a class="info-button" href="#popup">Mer info</a>
-          </article>
-          
+          </div>
         </section>
 
         <section class="project-box">
-          
-          <article class="project-box-left">
+          <div class="project-box-left">
+            <img
+              class="projectpic"
+              src="images/group.png"
+              alt="Group picture"
+            />
+          </div>
+          <div class="project-box-middle">
             <h2>Projekt i grupp</h2>
             <h4>Objektorienterad programmering</h4>
             <p>- Skolprojekt i grupp</p>
-          </article>
-          <article class="project-box-right">
+          </div>
+          <div class="project-box-right">
             <a class="info-button" href="#popup2">Mer info</a>
-          </article>
-          
+          </div>
         </section>
 
         <section class="project-box">
-          <article class="project-box-left">
+          <div class="project-box-left">
+            <img
+              class="projectpic"
+              src="images/dailyhelp.png"
+              alt="app picture"
+            />
+          </div>
+          <div class="project-box-middle">
             <h2>Vardagsapp</h2>
             <h4>ASP.NET Core Web App</h4>
             <p>- Eget app-projekt</p>
-          </article>
-          <article class="project-box-right">
-            <a class="info-button" href="">Mer info</a>
-          </article>
+          </div>
+          <div class="project-box-right">
+            <a class="info-button" href="#popup3">Mer info</a>
+          </div>
         </section>
-        <article class="project-box">
-          <p>Projekt 4</p>
-        </article>
+
+        <section class="project-box">
+          <div class="project-box-left">
+            <img
+              class="projectpic"
+              src="images/cvpage.png"
+              alt="Cv-page picture"
+            />
+          </div>
+          <div class="project-box-middle">
+            <h2>CV-Sida</h2>
+            <h4>HTML & CSS</h4>
+            <p>- Den här hemsidan</p>
+          </div>
+          <div class="project-box-right">
+            <a class="info-button" href="#popup4">Mer info</a>
+          </div>
+        </section>
       </section>
     </main>
     <footer>
