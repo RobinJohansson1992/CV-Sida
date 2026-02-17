@@ -2,7 +2,6 @@
   margin: 0px;
   padding: 0px;
   border: 0px;
-  
 }
 body {
   background: black;
@@ -47,7 +46,8 @@ header {
   text-shadow: 1px 2px 5px rgb(0, 0, 0);
   color: rgba(254, 184, 78, 0.607);
   font-size: 1.5rem;
-  font-family: "Public Sans"}
+  font-family: "Public Sans";
+}
 .headerpic {
   display: flex;
   flex-direction: row;
@@ -78,13 +78,13 @@ a:hover {
   color: white;
   text-shadow: 1px 1px 5px rgb(255, 255, 255);
 }
-a:active{
+a:active {
   text-shadow: none;
-  color:rgba(255, 255, 255, 0.764);
+  color: rgba(255, 255, 255, 0.764);
 }
-.active-page{
+.active-page {
   font-size: 1.8rem;
-  color:rgba(254, 182, 48, 0.897);
+  color: rgba(254, 182, 48, 0.897);
 }
 
 .selfie {
@@ -178,10 +178,10 @@ main {
   margin-top: 3rem;
   width: 60vw;
 }
-.projects{
-  margin-top:2rem;
+.projects {
+  margin-top: 2rem;
 }
-.project-box{
+.project-box {
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -199,12 +199,12 @@ main {
   border: 2px solid rgb(195, 217, 255);
   transition: transform 1.5s;
 }
-.project-box-middle{
+.project-box-middle {
   display: flex;
   flex-direction: column;
   width: 55%;
 }
-.project-box-right{
+.project-box-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,7 +212,7 @@ main {
   width: 25%;
   height: 6rem;
 }
-.info-button{
+.info-button {
   padding: 1rem;
   border: 0.1rem solid white;
   border-radius: 20px;
@@ -226,21 +226,21 @@ main {
   font-size: 1.5rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.371);
 }
-.project-box-left{
-width: 20%;
-display: flex;
+.project-box-left {
+  width: 20%;
+  display: flex;
 }
-.projectpic{
+.projectpic {
   width: 8rem;
   height: 5rem;
-  margin-top:0.5rem;
+  margin-top: 0.5rem;
   border-radius: 10px;
   display: flex;
   justify-self: center;
   border: 1px solid white;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.371);
 }
-.info-button:hover{
+.info-button:hover {
   padding: 1.1rem;
   background: linear-gradient(
     90deg,
@@ -249,7 +249,7 @@ display: flex;
     rgb(12, 42, 12) 150%
   );
 }
-.info-button:active{
+.info-button:active {
   padding: 1rem;
   border: 0.1rem solid white;
   border-radius: 20px;
@@ -307,7 +307,7 @@ display: flex;
   opacity: 1;
   visibility: visible;
 }
-.popup3{
+.popup3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -319,7 +319,7 @@ display: flex;
   opacity: 1;
   visibility: visible;
 }
-.popup4{
+.popup4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,7 +327,7 @@ display: flex;
   padding: 2rem;
   border-radius: 12px;
 }
-.repo-linq{
+.repo-linq {
   color: rgb(136, 249, 136);
 }
 h1 {
@@ -360,35 +360,137 @@ li {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
-footer{
+footer {
   padding-top: 8rem;
 }
 @media (max-width: 768px) {
   .columns {
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    margin-top: 1rem;
   }
-  .side-column{
-    width: 100%;
+  .side-column {
+    padding-top: 0.5rem;
+    width: 110%;
     margin-bottom: 1rem;
   }
-  .selfie{
+  .selfie {
     display: none;
   }
-  header{
+  header {
     display: flex;
     flex-direction: column;
     height: 5rem;
+    width: 90vw;
   }
-  .header-menu{
+  .headertext {
+    width: 90%;
+  }
+
+  .header-menu {
     display: flex;
-    align-items: column;
+    align-items: row;
     justify-content: center;
   }
-  .header-menu li{
-    margin: 0.5rem;
+  .active-page {
+    font-size: 1.1rem;
+    color: rgba(254, 182, 48, 0.897);
   }
-  .main-box{
+  .header-menu li {
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+  .main-box {
     width: 80%;
   }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+    padding: 1rem 0rem;
+  }
+  .project-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    width: 80vw;
+    background-color: rgba(75, 121, 219, 0.221);
+    background-size: cover;
+    border-radius: 30px;
+    box-shadow: 5px 5px 8px rgba(155, 171, 176, 0.371);
+    border: 2px solid rgb(195, 217, 255);
+    transition: transform 1.5s;
+  }
+  .project-box-middle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .project-box-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+  }
+  .info-button {
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    border: 0.1rem solid white;
+    border-radius: 20px;
+    width: 40vw;
+    background: linear-gradient(
+      90deg,
+      rgb(22, 99, 59, 0.5) 0%,
+      rgba(39, 178, 113, 0.5) 45%,
+      rgb(12, 42, 12, 0.5) 150%
+    );
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.371);
+  }
+  .project-box-left {
+    display: flex;
+    justify-content: center;
+  }
+  .projectpic {
+    width: 10rem;
+    height: 5rem;
+    margin-top: 0.5rem;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.371);
+  }
+  .overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 50px;
+    border: 0.11rem solid white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    width: 60%;
+    margin-right: 4rem;
+    margin-top: 20rem;
+    box-shadow: 5px 5px 5px rgba(213, 213, 213, 0.371);
+  }
+  .close {
+    margin-top: 1rem;
+  }
+  .about-section {
+    width: 65%;
+  }
+}
