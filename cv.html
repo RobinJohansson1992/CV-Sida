@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cv</title>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,66 +51,24 @@
           arbetsmiljö.
         </p>
       </section>
-      <section class="columns">
-        <article class="side-column">
+
+      <section class="columns" id="CV-columns">
+        <div class="side-column" id="invisibleColumn3"></div>
+
+        <div class="side-column">
           <h2>ARBETSERFARENHET</h2>
           <hr class="divider" />
           <br />
-          <h4>2014 - 2025</h4>
-          <h4>Arla Foods Falkenberg</h4>
-          <h3>- Lageroperatör</h3>
-          <ul>
-            <li>
-              Lageroperatör där jag även var "Super-User" i det datorsystem
-              företaget använder sig av, vilket innebar stort ansvar.
-            </li>
-            <li>Justera och lägga till kundordrar.</li>
-            <li>Logistik och planering.</li>
-          </ul>
-          <hr class="divider" />
-          <h4>2013 - 2014</h4>
-          <h4>Proffice</h4>
-          <h3>- Lagerkonsult</h3>
-          <ul>
-            <li>Konsult som hyrdes ut till olika lagerjobb i Halland.</li>
-            <li>Lagerplock</li>
-            <li>Process, tillverkning</li>
-            <li>
-              Företag som Monark (nu CycleEurope), Dooria Sverige, AD Bildelar,
-              Arla Foods Falkenberg.
-            </li>
-          </ul>
-          <hr class="divider" />
-          <h4>2012 - 2013</h4>
-          <h4>Svensk Bevakningstjänst</h4>
-          <h3>- Utrymningsledare</h3>
-          <ul>
-            <li>Förebyggande brand- och utrymningssäkerhet.</li>
-            <li>Bevakning av innerslutning.</li>
-            <li>Säkerhetsronder.</li>
-          </ul>
-          <hr class="divider" />
-          <h4>2011 - 2013</h4>
-          <h4>Svensk Bevakningstjänst</h4>
-          <h3>- Brandskyddsvakt</h3>
-          <ul>
-            <li>Förebyggande brand- och utrymningssäkerhet.</li>
-            <li>Godkännande av heta arbeten.</li>
-            <li>Bevakning av heta arbeten.</li>
-          </ul>
-        </article>
-        <article class="side-column">
+          <div id="work-column"></div>
+        </div>
+
+        <div class="side-column">
           <h2>UTBILDNING</h2>
+          <br />
           <hr class="divider" />
-          <br />
-          <h3>Systemutvecklare.NET</h3>
-          <h4>Campus Varberg</h4>
-          <p>2025 - nutid</p>
-          <br />
-          <br />
-          <h3>Musikproduktion</h3>
-          <h4>LBS Varberg</h4>
-          <p>2008-2011</p>
+
+          <div id="education-column"></div>
+
           <br />
           <br />
           <hr class="divider" />
@@ -125,7 +84,9 @@
           <br />
           <h2>REFERENSER</h2>
           <p>- Lämnas gärna på begäran.</p>
-        </article>
+        </div>
+
+        <div class="side-column" id="invisibleColumn3"></div>
       </section>
     </main>
     <footer>
