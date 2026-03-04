@@ -1,0 +1,57 @@
+{
+  "educations": [
+    {
+      "title": "Systemutvecklare.NET",
+      "school": "Campus Varberg",
+      "yearsActive": "2025 - nutid"
+    },
+    {
+      "title": "Musikproduktion",
+      "school": "LBS Varberg",
+      "yearsActive": "2008 - 2011"
+    }
+  ],
+  "employments": [
+    {
+      "employer": "Arla Foods Falkenberg",
+      "years": "2014-2025",
+      "title": "Lageroperatör",
+      "workTasks": [
+        "Lageroperatör där jag även var 'Super-User' i det datorsystemföretaget använder sig av, vilket innebar stort ansvar.",
+        "Justera och lägga till kundordrar.",
+        "Logistik och planering."
+      ]
+    },
+    {
+      "employer": "Proffice",
+      "years": "2013-2014",
+      "title": "Lagerkonsult",
+      "workTasks": [
+        "Konsult som hyrdes ut till olika lagerjobb i Halland.",
+        "Lagerplock.",
+        "Process, tillverkning.",
+        "Företag som Monark (nu CycleEurope), Dooria Sverige, AD Bildelar, Arla Foods Falkenberg."
+      ]
+    },
+    {
+      "employer": "Svensk Bevakningstjänst",
+      "years": "2012-2013",
+      "title": "Utrymningsledare",
+      "workTasks": [
+        "Förebyggande brand- och utrymningssäkerhet.",
+        "Bevakning av innerslutning.",
+        "Säkerhetsronder."
+      ]
+    },
+    {
+      "employer": "Svensk Bevakningstjänst",
+      "years": "2011-2013",
+      "title": "Brandskyddsvakt",
+      "workTasks": [
+        "Förebyggande brand- och utrymningssäkerhet.",
+        "Godkännande av heta arbeten.",
+        "Bevakning av heta arbeten."
+      ]
+    }
+  ]
+}
