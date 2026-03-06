@@ -2,38 +2,34 @@
   margin: 0px;
   padding: 0px;
   border: 0px;
+  box-sizing: border-box;
 }
 body {
-  background-image: url(/Images/hamn.jpeg);
+  background-image: url(/Images/waves3.png);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: "Public Sans", Serif;
 }
+
 header {
   width: 100%;
   height: 3rem;
-  /* background: linear-gradient(
-    90deg,
-    rgba(151, 99, 193, 0.755) 0%,
-    rgba(139, 126, 157, 0.496) 45%,
-    rgba(83, 76, 221, 0.664) 150%
-  );
-  opacity: 0.9; */
   font-family: "Public Sans", serif;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
+  padding-top: 2.5rem;
   height: 6rem;
-  /* border-bottom: 0.1rem solid white;
-  border-width: 3px 0px;
-  box-shadow: 8px 7px 19px rgba(167, 138, 255, 0.496); */
 }
 .header-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 70%;
 }
 .headerpic {
   display: flex;
@@ -52,45 +48,80 @@ header li {
   list-style-type: none;
   font-size: 1.3rem;
 }
+.headertext {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 2px 5px rgb(255, 255, 255);
+  font-size: 2.5rem;
+  font-family: "Playwrite CU Guides";
+}
+.headertext h3 {
+  color: rgba(255, 255, 255, 0.143);
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 12rem 0rem 0rem 3rem;
+}
 a {
-  font-size: 0.5rem;
   text-decoration: none;
-  color: rgba(0, 149, 255, 0.666);
+  color: rgb(255, 255, 255);
 }
 a:hover {
-  font-size: 1.3rem;
-  color: rgba(0, 145, 255, 0.819);
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
   text-shadow: 1px 1px 5px rgb(255, 255, 255);
 }
 a:active {
   text-shadow: none;
-  color: rgba(9, 141, 242, 0.349);
+  color: rgba(119, 119, 119, 0.349);
 }
 .active-page {
-  font-size: 1.4rem;
-  color: rgb(6, 143, 247);
-  text-shadow: 1px 1px 9px rgba(255, 255, 255, 0.764);
-  font-weight: 600;
+  font-size: 1.7rem;
+  color: rgba(255, 255, 255, 0.848);
+  text-shadow: 1px 1px 9px rgba(255, 255, 255, 0.51);
+  font-weight: bold;
 }
 .selfie {
-  margin-top: 2rem;
-  height: 7rem;
-  width: 7rem;
-  border-radius: 50px;
-  border: 0.15rem solid rgba(2, 48, 83, 0.355);
+  margin: 13rem 6rem 0rem 10rem;
+  height: 12em;
+  width: 12rem;
+  min-width: 12rem;
+  border-radius: 150px;
+  border: 2px solid rgb(236, 243, 255);
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.426);
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -ms-border-radius: 150px;
+  -o-border-radius: 150px;
+  filter: brightness(1);
+  opacity: 0.8;
+  -webkit-filter: brightness(1.1) contrast(1.1) hue-rotate(7deg) saturate(0.5);
+  filter: brightness(1.1) contrast(1.1) hue-rotate(7deg) saturate(0.5);
 }
 .selfie2 {
   height: 17rem;
   width: 23rem;
   border-radius: 80px;
-  box-shadow: 1px 1px 5px rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px 5px rgb(255, 255, 255);
 }
 .selfie3 {
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 1px 1px 5px rgb(255, 255, 255);
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  height: 90%;
+  width: 95%;
+  border-radius: 150px;
+  border: 2px solid rgb(201, 201, 201);
+  box-shadow: 1px 1px 5px rgb(147, 147, 147);
+  margin-bottom: 0.5rem;
+  filter: brightness(1.2);
+  -webkit-filter: brightness(1.2);
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -ms-border-radius: 150px;
+  -o-border-radius: 150px;
 }
 main {
   display: flex;
@@ -107,13 +138,13 @@ main {
   padding-top: 4rem;
   margin-top: 2rem;
   padding-left: 3rem;
-  padding-bottom: 5rem;
-  width: 60vw;
+  padding-bottom: 4rem;
+  width: 55vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 30px;
-  box-shadow: 8px 5px 8px rgba(155, 171, 176, 0.371);
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.231);
   border: 2px solid rgb(195, 217, 255);
   transition: transform 1.5s;
   backdrop-filter: blur(5px);
@@ -127,21 +158,24 @@ main {
   padding-top: 2rem;
   margin-top: 2rem;
   padding-left: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.65rem;
   width: 55vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 30px;
-  box-shadow: 8px 5px 8px rgba(155, 171, 176, 0.371);
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.231);
   border: 2px solid rgb(195, 217, 255);
   transition: transform 1.5s;
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+}
+img jag.jpeg {
 }
 .main-box:before {
   content: "";
   background-image: url("/Images/jag.jpeg");
+
+  filter: brightness(1.3);
   background-size: cover;
   position: absolute;
   border-radius: 30px;
@@ -151,10 +185,12 @@ main {
   height: 100%;
   opacity: 0.8;
   z-index: -1;
+  -webkit-filter: brightness(1.3);
 }
 .contact-box:before {
   content: "";
   background-image: url("/Images/jag.jpeg");
+  filter: brightness(1.3);
   background-size: cover;
   position: absolute;
   border-radius: 30px;
@@ -164,6 +200,7 @@ main {
   height: 100%;
   opacity: 0.8;
   z-index: -1;
+  -webkit-filter: brightness(1.3);
 }
 .contact-box:hover {
   transform: scale(1.1);
@@ -182,9 +219,9 @@ main {
   padding-top: 2rem;
   padding-bottom: 2rem;
   width: 55vw;
-  background-color: rgba(36, 13, 61, 0.596);
+  background-color: rgba(3, 16, 53, 0.488);
   border-radius: 30px;
-  box-shadow: 8px 5px 8px rgba(155, 171, 176, 0.371);
+  box-shadow: 8px 5px 8px 2px 2px 10px 5px rgba(0, 0, 0, 0.231);
   border: 2px solid rgb(195, 217, 255);
   transition: transform 1.5s;
   backdrop-filter: blur(5px);
@@ -199,14 +236,16 @@ main {
   justify-content: start;
   align-items: start;
   padding: 2rem;
-  width: 24vw;
-  background-color: rgba(36, 13, 61, 0.529);
+  width: 25vw;
+  background-color: rgba(3, 16, 53, 0.488);
   border-radius: 30px;
-  box-shadow: 8px 5px 8px rgba(155, 171, 176, 0.371);
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.231);
   border: 2px solid rgb(195, 217, 255);
   transition: transform 1.5s;
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+}
+.side-column:hover {
+  transform: scale(1.1);
 }
 #invisibleColumn {
   display: flex;
@@ -214,7 +253,7 @@ main {
   justify-content: start;
   align-items: start;
   padding: 2rem;
-  width: 10vw;
+  width: 19vw;
   background: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -226,7 +265,7 @@ main {
   justify-content: start;
   align-items: start;
   padding: 2rem;
-  width: 10vw;
+  width: 19vw;
   background: none;
   backdrop-filter: none;
   box-shadow: none;
@@ -238,15 +277,13 @@ main {
   justify-content: start;
   align-items: start;
   padding: 2rem;
-  width: 10vw;
+  width: 19vw;
   background: none;
   backdrop-filter: none;
   box-shadow: none;
   border: none;
 }
-.side-column:hover {
-  transform: scale(1.1);
-}
+
 .columns {
   display: flex;
   flex-direction: row;
@@ -254,27 +291,114 @@ main {
   margin-top: 2rem;
   width: 100vw;
 }
+.allProjectsBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.repo-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-self: end;
+  width: 12%;
+  color: rgb(40, 41, 40);
+  font-size: 1rem;
+  padding: 0.6rem;
+  border: 0.1rem solid rgb(204, 204, 204);
+  border-radius: 30px;
+  margin-right: 2rem;
+  background-color: rgba(228, 243, 255, 0.775);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.repo-link:hover {
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
+  background-color: rgb(228, 243, 255);
+}
+.repo-link:active {
+  background-color: rgba(228, 243, 255, 0.644);
+}
+.repo-description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-items: start;
+  width: 30%;
+  font-size: 1rem;
+  border-left: 0.1rem solid rgb(190, 190, 190);
+  padding-left: 1.5rem;
+}
+.repo-title {
+  width: 23%;
+}
+.repo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem 2rem 2rem;
+  margin-top: 1.5rem;
+  width: 50rem;
+  height: 5rem;
+  background-color: rgba(3, 16, 53, 0.488);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.371);
+  border: 2px solid rgb(195, 217, 255);
+  transition: transform 1.5s;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 1;
+}
+.repo:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.repoDiv title {
+  margin-left: 5rem;
+}
 .projects {
   margin-top: 2rem;
+  display: none;
 }
 .project-box {
   display: flex;
   flex-direction: row;
   align-items: start;
   padding: 2rem 1rem 2rem 2rem;
-  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   width: 55vw;
-  background-color: rgba(36, 13, 61, 0.482);
+  background-color: rgba(3, 16, 53, 0.488);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 30px;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.371);
-  border: 2px solid rgb(238, 195, 255);
-  transition: transform 1.5s;
+  border: 2px solid rgb(195, 217, 255);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   z-index: 1;
+  transition: transform 1.5s;
+}
+.project-box:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 .project-box-middle {
   display: flex;
@@ -292,16 +416,35 @@ main {
 .info-button {
   padding: 1rem;
   border: 0.1rem solid white;
-  border-radius: 20px;
+  border-radius: 150px;
   margin-right: 2rem;
-  background: linear-gradient(
-    90deg,
-    rgba(57, 22, 99, 0.389) 0%,
-    rgba(120, 39, 178, 0.07) 45%,
-    rgba(30, 12, 42, 0.452) 150%
-  );
+  background: rgba(228, 243, 255, 0.775);
+  color: rgb(50, 50, 50);
+  font-size: 1.3rem;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.371);
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -ms-border-radius: 150px;
+  -o-border-radius: 150px;
+}
+.info-button:hover {
+  padding: 1.1rem;
+  color: black;
+  background: rgb(228, 243, 255);
+  text-shadow: none;
+}
+.info-button:active {
+  padding: 1rem;
+  border: 0.1rem solid white;
+  border-radius: 150px;
+  margin-right: 2rem;
+  background: rgba(228, 243, 255, 0.36);
   font-size: 1.5rem;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.371);
+  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.371);
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -ms-border-radius: 150px;
+  -o-border-radius: 150px;
 }
 .project-box-left {
   width: 20%;
@@ -317,29 +460,7 @@ main {
   border: 1px solid white;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.371);
 }
-.info-button:hover {
-  padding: 1.1rem;
-  background: linear-gradient(
-    90deg,
-    rgba(99, 22, 45, 0.389) 0%,
-    rgba(178, 39, 78, 0.244) 45%,
-    rgba(42, 17, 12, 0.452) 150%
-  );
-}
-.info-button:active {
-  padding: 1rem;
-  border: 0.1rem solid white;
-  border-radius: 20px;
-  margin-right: 2rem;
-  background: linear-gradient(
-    90deg,
-    rgba(57, 22, 99, 0.389) 0%,
-    rgba(120, 39, 178, 0.07) 45%,
-    rgba(30, 12, 42, 0.452) 150%
-  );
-  font-size: 1.5rem;
-  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.371);
-}
+
 .overlay {
   position: fixed;
   background: rgba(0, 0, 0, 0.9);
@@ -356,6 +477,46 @@ main {
   transition: 0.3s;
   width: 48%;
   box-shadow: 5px 5px 5px rgba(213, 213, 213, 0.371);
+  z-index: 2;
+}
+.loader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem 1.5rem 2rem;
+  margin-top: 3.5rem;
+  width: 50vw;
+  font-size: 1.5rem;
+  background-color: rgba(3, 53, 19, 0.488);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.371);
+  border: 2px solid rgb(195, 217, 255);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 2;
+}
+.loadingFail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem 1.5rem 2rem;
+  margin-top: 3.5rem;
+  width: 50vw;
+  font-size: 1.5rem;
+  background-color: rgba(53, 3, 3, 0.488);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.371);
+  border: 2px solid rgb(195, 217, 255);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   z-index: 2;
 }
 #popup:target {
@@ -408,18 +569,23 @@ main {
 .repo-linq {
   color: rgb(136, 249, 136);
 }
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
 h1 {
   font-size: 3rem;
-  color: rgba(173, 221, 255, 0.878);
+  color: rgb(178, 203, 222);
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.621);
 }
 h2 {
   font-size: 1.9rem;
-  color: rgba(173, 221, 255, 0.878);
+  color: rgb(178, 203, 222);
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.621);
 }
 h3 {
-  color: rgba(171, 188, 239, 0.849);
+  color: rgba(228, 243, 255, 0.775);
   font-size: 1.5rem;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.621);
 }
@@ -434,17 +600,7 @@ p {
 li {
   color: white;
 }
-.headertext {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  text-shadow: 1px 2px 5px rgb(255, 255, 255);
-  font-size: 1.5rem;
-  font-family: "Playwrite CU Guides";
-}
-.headertext h3 {
-  color: rgba(28, 89, 159, 0.863);
-}
+
 .divider {
   color: white;
   background-color: rgb(223, 222, 222);
@@ -475,39 +631,50 @@ footer {
   color: red;
   font-weight: bold;
 }
+.hidden {
+  display: none;
+}
 @media (max-width: 768px) {
   .columns {
     flex-direction: column;
     align-items: center;
     margin-top: 1rem;
   }
+  .headertext {
+    width: 0px;
+    margin: 0px;
+    display: none;
+  }
   .side-column {
     padding-top: 0.5rem;
-    width: 110%;
+    width: 63%;
     margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
   }
   .selfie {
+    width: 0px;
+    margin: 0px;
     display: none;
   }
   header {
     display: flex;
     flex-direction: column;
-    height: 5rem;
-    width: 100vw;
   }
-  .headertext {
-    width: 90%;
-  }
+
   .header-menu {
     display: flex;
     align-items: row;
     justify-content: center;
+    align-items: center;
+    justify-self: center;
     margin-right: 1rem;
     margin-top: 0.5rem;
+    width: 100vw;
   }
   .active-page {
     font-size: 1.1rem;
-    color: rgba(254, 182, 48, 0.897);
+    color: rgba(255, 255, 255, 0.897);
   }
   .contact-box {
     width: 80%;
@@ -517,8 +684,11 @@ footer {
   a {
     font-size: 0.7rem;
   }
+  a:hover {
+    font-size: 0.8rem;
+  }
   .header-menu li {
-    margin: 0.5rem;
+    margin: 1rem;
     font-size: 0.7rem;
   }
   .main-box {
@@ -545,6 +715,31 @@ footer {
     box-shadow: 5px 5px 8px rgba(155, 171, 176, 0.371);
     border: 2px solid rgb(195, 217, 255);
     transition: transform 1.5s;
+  }
+  .allProjectsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .repo {
+    min-width: 80vw;
+    max-width: 80vw;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-self: center;
+    box-sizing: border-box;
+  }
+  .repo-title {
+    margin-left: 1rem;
+  }
+  .repo-description {
+    display: none;
+  }
+  .repo-link {
+    min-width: 4rem;
   }
   .project-box-middle {
     display: flex;
@@ -575,6 +770,10 @@ footer {
     );
     font-size: 1.5rem;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.371);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
   }
   .project-box-left {
     display: flex;
