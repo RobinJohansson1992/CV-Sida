@@ -8,8 +8,8 @@ const secretWord = "hej";
 
 if (invisibleColumn) {
   invisibleColumn.addEventListener("click", () => {
-    selfie.src = "images/mask2.png";
-    document.body.style.background = "url(images/matrix.png)";
+    selfie.src = "Images/mask2.png";
+    document.body.style.background = "url(Images/matrix.png)";
   });
 }
 
@@ -136,5 +136,3 @@ async function getRepos() {
 }
 
 getRepos();
-
-
