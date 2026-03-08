@@ -169,11 +169,10 @@ main {
   transition: transform 1.5s;
   backdrop-filter: blur(5px);
 }
-img jag.jpeg {
-}
+
 .main-box:before {
   content: "";
-  background-image: url("/Images/jag.jpeg");
+  background-image: url("Images/jag.jpeg");
 
   filter: brightness(1.3);
   background-size: cover;
