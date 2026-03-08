@@ -636,7 +636,7 @@ footer {
   .columns {
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: none;
   }
   .headertext {
     width: 0px;
@@ -644,60 +644,128 @@ footer {
     display: none;
   }
   .side-column {
-    padding-top: 0.5rem;
-    width: 63%;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-wrap: wrap;
+    width: 90%;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+    border-radius: 0px 6rem 6rem 0px;
+    margin-bottom: 2rem;
+    margin-top: none;
+    -webkit-border-radius: 0px 6rem 6rem 0px;
+    -moz-border-radius: 0px 6rem 6rem 0px;
+    -ms-border-radius: 0px 6rem 6rem 0px;
+    -o-border-radius: 0px 6rem 6rem 0px;
   }
   .selfie {
-    width: 0px;
-    margin: 0px;
-    display: none;
+    margin: 8px 1px 1px 19px;
+    height: 9rem;
+    width: 9rem;
+    min-width: 9rem;
+    opacity: 0.9;
+  }
+  .headerpic {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    width: 30vw;
   }
   header {
+    width: 80vw;
+    height: 60vw;
     display: flex;
-    flex-direction: column;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
   }
 
   .header-menu {
     display: flex;
-    align-items: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    justify-self: center;
     margin-right: 1rem;
-    margin-top: 0.5rem;
-    width: 100vw;
+    margin-top: 1rem;
+    width: 40vw;
+    height: 20vw;
+    justify-items: initial;
+    margin-left: 1rem;
+  }
+  .header-menu ul {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin: none;
+  }
+  .header-menu li {
+    display: flex;
+    justify-content: initial;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .header-menu a {
+    margin: 4px;
+    height: 5px;
+    border: 1px solid white;
+    height: 30px;
+    width: 9rem;
+    padding: 5px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    font-size: 1rem;
+    background: rgba(228, 243, 255, 0.775);
+    border-radius: 0px 20px 20px 0px;
+  }
+  .header-menu a:active {
+    background: rgba(88, 88, 88, 0.775);
   }
   .active-page {
     font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.897);
+    color: rgb(50, 50, 50);
   }
   .contact-box {
-    width: 80%;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    width: 90%;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+    border-radius: 0px 6rem 6rem 0px;
+  }
+  .contact-box:before {
+    border-radius: 0px 6rem 6rem 0px;
   }
   a {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    margin: none;
+    color: rgb(50, 50, 50);
   }
   a:hover {
     font-size: 0.8rem;
   }
-  .header-menu li {
-    margin: 1rem;
-    font-size: 0.7rem;
-  }
   .main-box {
-    width: 80%;
+    width: 90%;
+    padding: 1.5rem;
+    padding-bottom: 3rem;
+    border-radius: 0px 6rem 6rem 0px;
+    -webkit-border-radius: 0px 6rem 6rem 0px;
+    -moz-border-radius: 0px 6rem 6rem 0px;
+    -ms-border-radius: 0px 6rem 6rem 0px;
+    -o-border-radius: 0px 6rem 6rem 0px;
+  }
+  .main-box::before {
+    border-radius: 0px 6rem 6rem 0px;
+    -webkit-border-radius: 0px 6rem 6rem 0px;
+    -moz-border-radius: 0px 6rem 6rem 0px;
+    -ms-border-radius: 0px 6rem 6rem 0px;
+    -o-border-radius: 0px 6rem 6rem 0px;
   }
   h1 {
     font-size: 2rem;
+    margin: 1rem 0rem;
   }
   h2 {
     font-size: 1.4rem;
-    padding: 1rem 0rem;
   }
   .project-box {
     display: flex;
@@ -719,19 +787,25 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 90vw;
+  }
+  .loader {
+    width: 100%;
+    padding-bottom: 2rem;
+    border-radius: 0px 6rem 6rem 0px;
+    justify-content: start;
   }
   .repo {
-    min-width: 80vw;
-    max-width: 80vw;
-    height: 100%;
-    padding: 1rem;
+    width: 100%;
+    padding-bottom: 2rem;
+    border-radius: 0px 6rem 6rem 0px;
     display: flex;
-    justify-self: center;
+    justify-self: start;
     box-sizing: border-box;
   }
   .repo-title {
-    margin-left: 1rem;
+    width: 60%;
+    font-size: 18px;
   }
   .repo-description {
     display: none;
@@ -808,6 +882,18 @@ footer {
     margin-top: 1rem;
   }
   .about-section {
-    width: 65%;
+    width: 90%;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+    border-radius: 0px 6rem 6rem 0px;
+    margin-bottom: none;
+    margin-top: none;
+    padding-top: none;
+  }
+  #invisibleColumn {
+    display: none;
+  }
+  #invisibleColumn3 {
+    display: none;
   }
 }
