@@ -370,7 +370,6 @@ main {
 }
 .projects {
   margin-top: 2rem;
-  display: none;
 }
 .project-box {
   display: flex;
@@ -676,7 +675,8 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    padding-top: 3rem;
   }
 
   .header-menu {
@@ -709,7 +709,7 @@ footer {
     margin: 4px;
     height: 5px;
     border: 1px solid white;
-    height: 30px;
+    height: 33px;
     width: 9rem;
     padding: 5px;
     display: flex;
@@ -754,6 +754,8 @@ footer {
     -o-border-radius: 0px 6rem 6rem 0px;
   }
   .main-box::before {
+    background-image: none;
+    background-color: rgba(3, 16, 53, 0.488);
     border-radius: 0px 6rem 6rem 0px;
     -webkit-border-radius: 0px 6rem 6rem 0px;
     -moz-border-radius: 0px 6rem 6rem 0px;
@@ -895,5 +897,9 @@ footer {
   }
   #invisibleColumn3 {
     display: none;
+  }
+  .contact-box:before {
+    background-image: none;
+    background-color: rgba(3, 16, 53, 0.488);
   }
 }
